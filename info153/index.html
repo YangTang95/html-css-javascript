@@ -1,0 +1,52 @@
+<!--
+## Project:  Temperature Converter
+## By:  Yang Tang
+## For:  Info 153
+## Time:  Apr.17.2017
+## Description: use html to create the framework and use php to calculate the value
+-->
+
+
+<html>
+<head> 
+      <title>Temp Conversion</title>
+      <!-- yt: the title for the page-->
+      <meta charset="utf-8">
+      <!-- yt: the character code setting-->
+</head>
+<body>
+      <form name="tempConvert" method="POST" action="converter.php">
+      <!-- yt: goes to the converter.php when the submission button is clicked -->
+
+<table>
+<tr>
+    <td>Enter value to convert (numbers only) </td>
+    <!-- yt: the text to remind the user to input number-->
+    <td><input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode ==46' name="valueConvert" id="valueConvert" size="15"></td>
+    <!-- yt: create the input box use charcode to limit the contents to be only 0-9 and "."-->
+</tr>
+
+<tr>
+    <td>Convert to:</td>
+    <td><select name="convertType" id="convertType" size="1">
+               <option selected="true" disabled> Select a measurement type</option>
+               <option value="celsius">Celsius</option>
+               <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <!-- yt: create the selector bar to let users select celsius or fahrenheit-->
+    </td>
+</tr>
+
+<tr>
+    <td><button type="submit" name="answer" id="answer" value="answer">cal</button></td>
+    <!-- yt: the botton which set to go to the form-->
+    <td><button type="reset" name="toreset" id="toreset" value="toreset">reset</button></td>
+    <!-- yt: the botton to clear everything -->
+</tr>
+
+
+
+</form>
+
+</body>
+</html>

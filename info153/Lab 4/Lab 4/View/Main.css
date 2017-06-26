@@ -1,0 +1,29 @@
+body {
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    font-family: Arial;
+    font-size: 150%;
+    color: black;
+}
+
+#container {
+    border-radius: 25px;
+    background: #00BFFF;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    width: 50%;
+    height: auto; 
+    margin: auto;
+    text-align: center;
+}
+
+h1,h2 {
+    color: black;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
